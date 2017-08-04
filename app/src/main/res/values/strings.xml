@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather App By EJFR</string>
+    <string name="label_choose_city">Choose City</string>
+    <string name="label_city">City</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_wind">Wind</string>
+    <string name="label_cloud">Cloudness</string>
+    <string name="label_pressure">Pressure</string>
+    <string name="label_humidity">Humidity</string>
+    <string name="label_sunrise">Sunrise</string>
+    <string name="label_sunset">Sunset</string>
+    <string name="label_coords">Geo coords</string>
+    <string name="label_temp_max">Temp Max</string>
+    <string name="label_temp_min">Temp Min</string>
+    <string name="label_description">Description</string>
+
+</resources>

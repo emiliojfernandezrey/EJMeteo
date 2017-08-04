@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textviewChooseCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/label_choose_city" />
+
+        <Spinner
+            android:id="@+id/spinnerFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="3dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:columnCount="2"
+            android:rowCount="10">
+
+            /Row 0
+            <TextView
+                android:id="@+id/textViewCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="0"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageViewWeather"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_margin="2dp"
+                android:layout_row="0"
+                android:background="@color/color_background" />
+
+            /Row 1
+            <TextView
+                android:id="@+id/textViewLabelTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="1"
+                android:text="@string/label_temperature" />
+
+            <TextView
+                android:id="@+id/textViewTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="1" />
+
+            /Row 2
+
+            <TextView
+                android:id="@+id/textViewLabelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="2"
+                android:text="@string/label_description" />
+
+            <TextView
+                android:id="@+id/textViewDesription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="2" />
+
+            /Row 3
+
+            <TextView
+                android:id="@+id/textViewLabelWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="3"
+                android:text="@string/label_wind" />
+
+            <TextView
+                android:id="@+id/textViewWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="3" />
+
+            /Row 4
+
+            <TextView
+                android:id="@+id/textViewLabelCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="4"
+                android:text="@string/label_cloud" />
+
+            <TextView
+                android:id="@+id/textViewCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="4" />
+
+            /Row 5
+
+            <TextView
+                android:id="@+id/textViewLabelPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="5"
+                android:text="@string/label_pressure" />
+
+            <TextView
+                android:id="@+id/textViewPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="5" />
+
+            /Row 6
+
+            <TextView
+                android:id="@+id/textViewLabelHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="6"
+                android:text="@string/label_humidity" />
+
+            <TextView
+                android:id="@+id/textViewHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="6" />
+
+            /Row 7
+
+            <TextView
+                android:id="@+id/textViewLabelTempMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="7"
+                android:text="@string/label_temp_max" />
+
+            <TextView
+                android:id="@+id/textViewTempMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="7" />
+
+            /Row 8
+
+            <TextView
+                android:id="@+id/textViewLabelTempMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="8"
+                android:text="@string/label_temp_min" />
+
+            <TextView
+                android:id="@+id/textViewTempMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="8" />
+
+            /Row 9
+
+            <TextView
+                android:id="@+id/textViewLabelCoords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="2dp"
+                android:layout_row="9"
+                android:text="@string/label_coords" />
+
+            <TextView
+                android:id="@+id/textViewCoords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_row="9" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
